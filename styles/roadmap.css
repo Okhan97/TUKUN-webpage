@@ -18,9 +18,11 @@
 
 .folder-container {
     --folder-border: 20px;
+    --circle-size: 60px;
     max-width: 300px;
     height: 300px;
     flex-grow: 1;
+    position: relative;
 
     .folder-title {
         color: white;
@@ -37,9 +39,46 @@
     .folder-body {
         background-color: var(--yellow-1);
         flex-grow: 1;
-        padding: 1em ;
+        padding: 2em 1em ;
         border-radius: 0 var(--folder-border) 0 0;
         font-size: 1.2em;
+    }
+
+    .folder-black-line {
+        height: 1.5em;
+        background-color: var(--black) !important;
+        width: 5em;
+        border-radius: 100em;
+        position: absolute;
+        right: -2.5em;
+        bottom: 1em;
+    }
+
+    .circle {
+        border-radius: 100em;
+        height: var(--circle-size);
+        width: var(--circle-size);
+        background-color: var(--blue-1);
+        position: absolute;
+        right: 20%;
+    }
+
+}
+
+.folder-container.alternative {
+    > div {
+        background-color: var(--blue-1);
+        color: white;
+    }
+    .circle {
+        background-color: var(--yellow-1);
+    }
+}
+
+.folder-container.bottom-circle {
+    .circle {
+        bottom: -1em;
+        left: 20%;
     }
 }
 
@@ -50,11 +89,9 @@
     padding: 3em 0;
     flex-grow: 1;
     > *:nth-child(1){
-        position: relative;
-        top: var(--folder-displacement)
+        top: var(--folder-displacement);
     }
     > *:nth-child(3){
-        position: relative;
         top: var(--folder-displacement)
     }
 }
