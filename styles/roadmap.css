@@ -1,0 +1,60 @@
+
+
+.roadmap-container {
+    background-color: var(--white-1);
+    padding-top: 3em;
+    .title {
+        background-color: var(--blue-1);
+        color: white;
+        max-width: 400px;
+        text-align: end;
+        padding-right: 2em;
+        > h1 {
+            font-size: 2.5em;
+        }
+    }
+}
+
+
+.folder-container {
+    --folder-border: 20px;
+    max-width: 300px;
+    height: 300px;
+    flex-grow: 1;
+
+    .folder-title {
+        color: white;
+        background-color: var(--yellow-1);
+        border-radius: var(--folder-border) var(--folder-border) 0 0;
+        width: 50%;
+        align-self: flex-start;
+        text-align: center;
+        font-weight: 700;
+        font-size: 2em;
+        display: inline-block;
+        height: 1.2em;
+    }
+    .folder-body {
+        background-color: var(--yellow-1);
+        flex-grow: 1;
+        padding: 1em ;
+        border-radius: 0 var(--folder-border) 0 0;
+        font-size: 1.2em;
+    }
+}
+
+.folders-row {
+    --folder-displacement: 260px;
+    width: 100%;
+    justify-content: center;
+    padding: 3em 0;
+    flex-grow: 1;
+    > *:nth-child(1){
+        position: relative;
+        top: var(--folder-displacement)
+    }
+    > *:nth-child(3){
+        position: relative;
+        top: var(--folder-displacement)
+    }
+}
