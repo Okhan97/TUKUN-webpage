@@ -1,97 +1,77 @@
-
-
 .roadmap-container {
-    background-color: var(--white-1);
+    background-color: var(--black);
     padding-top: 3em;
+
     .title {
-        background-color: var(--blue-1);
-        color: white;
-        max-width: 400px;
-        text-align: end;
-        padding-right: 2em;
-        > h1 {
-            font-size: 2.5em;
+        background-color: var(--purple);
+        color: #ffffff;
+        max-width: 1000px;
+        padding: 0.3em;
+        padding-left: 3em;
+        padding-right: 1em;
+        border-radius: 0 0.5em 0.5em 0;
+        font-size: 2.5em;
+        line-height: 1em;
+    }
+
+    .folders-row {
+        flex: 1;
+        padding: 3em;
+        justify-content: space-between;
+
+
+        >div {
+            align-self: center;
+            position: relative;
+        }
+
+        >div:nth-child(1) {
+            align-self: end;
+        }
+
+        >div:nth-child(2) {
+            bottom: -20%;
+        }
+
+        >div:nth-child(4) {
+            bottom: 20%;
+
+        }
+
+        >div:nth-child(5) {
+            align-self: start;
         }
     }
 }
 
 
-.folder-container {
-    --folder-border: 20px;
-    --circle-size: 60px;
-    max-width: 300px;
-    height: 300px;
-    flex-grow: 1;
-    position: relative;
+.roadmap-folder-container {
+    height: fit-content;
+    flex: 1;
 
-    .folder-title {
-        color: white;
-        background-color: var(--yellow-1);
-        border-radius: var(--folder-border) var(--folder-border) 0 0;
-        width: 50%;
-        align-self: flex-start;
+    >div {
+        background-color: var(--white-1);
+        opacity: 60%;
+    }
+
+    .folder-step {
+        width: fit-content;
+        border-radius: 0.5em 0.5em 0 0;
         text-align: center;
-        font-weight: 700;
-        font-size: 2em;
-        display: inline-block;
+        font-size: 1.5em;
+        padding: 0 0.5em;
         height: 1.2em;
     }
+
     .folder-body {
-        background-color: var(--yellow-1);
-        flex-grow: 1;
-        padding: 2em 1em ;
-        border-radius: 0 var(--folder-border) 0 0;
-        font-size: 1.2em;
-    }
+        border-radius: 0 2.5em 2.5em 2.5em;
+        padding: 1em;
+        padding-bottom: 2em;
+        line-height: 1.2rem;
 
-    .folder-black-line {
-        height: 1.5em;
-        background-color: var(--black) !important;
-        width: 5em;
-        border-radius: 100em;
-        position: absolute;
-        right: -2.5em;
-        bottom: 1em;
-    }
-
-    .circle {
-        border-radius: 100em;
-        height: var(--circle-size);
-        width: var(--circle-size);
-        background-color: var(--blue-1);
-        position: absolute;
-        right: 20%;
-    }
-
-}
-
-.folder-container.alternative {
-    > div {
-        background-color: var(--blue-1);
-        color: white;
-    }
-    .circle {
-        background-color: var(--yellow-1);
-    }
-}
-
-.folder-container.bottom-circle {
-    .circle {
-        bottom: -1em;
-        left: 20%;
-    }
-}
-
-.folders-row {
-    --folder-displacement: 260px;
-    width: 100%;
-    justify-content: center;
-    padding: 3em 0;
-    flex-grow: 1;
-    > *:nth-child(1){
-        top: var(--folder-displacement);
-    }
-    > *:nth-child(3){
-        top: var(--folder-displacement)
+        >span {
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+        }
     }
 }

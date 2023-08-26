@@ -1,39 +1,52 @@
+import RoadmapFolder from "../src/app/roadmapFolder";
 import "../src/styles/roadmap.css";
 
-const text =
-  "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet";
+const ROADMAP_TEXT = [
+  {
+    title: "ENAMÓRATE DE NUESTROS KITS",
+    description:
+      "Si ya quieres ser una horticultora urbana tienes muchas opciones para elegir en nuestra tienda. ¡Go!",
+  },
+  {
+    title: "PÍDELO A TU MEDIDA",
+    description:
+      "Una vez que ya decidiste la especie que quieres, ahora es el turno que elijas la semilla o variante que tú quieras; aunque ya tengas uno andando.",
+  },
+  {
+    title: "LAS OPCIONES NO ACABAN ACÁ",
+    description:
+      "Ahora solo queda que nos digas cuándo y si lo quieres recibir andando o armarlo tú. Pero entre nos, no somos IKEA.",
+  },
+  {
+    title: "¿QUIERES APOYO PARA QUE NADA SE TE ESCAPE?",
+    description:
+      "Si nuestro whatsapp no es suficiente para tus dudas, o el tutorial de youtube no es suficiente, tenemos planes de acompañamiento para ti.",
+  },
+  {
+    title: "COSECHAR Y EMPEZAR DE NUEVO",
+    description:
+      "Las vueltas son las que dejan, y por eso tenemos nuestros packs de recarga TUKUN. Y de paso, tiéntate con un nuevo kit, ¡así tu huerto urbano crece más!",
+  },
+];
 
-const Folder = ({
-  number,
-  text,
-  alternative = false,
-  bottomCircle = false,
-}) => {
-  const containerClassName = `folder-container column ${
-    alternative && "alternative"
-  } ${bottomCircle && "bottom-circle"}
-  `;
-  return (
-    <div className={containerClassName}>
-      <div className="folder-title">PASO {number}</div>
-      <div className="folder-body">{text}</div>
-      <div className="folder-black-line" />
-      <div className="circle " />
-    </div>
-  );
-};
-export default function Roadmap() {
+function Roadmap() {
   return (
     <div className="roadmap-container column">
       <div className="title">
-        <h1>ROADMAP</h1>
+        ¿ESTÁS BUSCANDO TENER TU PROPIO <br /> HUERTO URBANO SIN IMPORTAR TU
+        HABILIDAD?
       </div>
       <div className="folders-row row gap-10">
-        <Folder number={1} text={text} alternative />
-        <Folder number={2} text={text} bottomCircle />
-        <Folder number={3} text={text} />
-        <Folder number={4} text={text} bottomCircle />
+        {ROADMAP_TEXT.map(({ title, description }, idx) => (
+          <RoadmapFolder
+            number={idx + 1}
+            title={title}
+            description={description}
+          />
+        ))}
       </div>
     </div>
   );
 }
+
+export default Roadmap;
