@@ -23,7 +23,7 @@
   --blue-2: #3a92a8;
   --blue-3: #71b0c0;
   --blue-4: #8dbfcb;
-  
+
   /* Green */
   --green-1: #6e8a3d;
   --green-2: #9fb27f;
@@ -31,6 +31,9 @@
   /* Red */
   --red-1: #b50000;
   --red-2: #ce5757;
+
+  /* Purple */
+  --purple: #5e3d5d
 }
 
 * {
@@ -40,19 +43,19 @@
 }
 
 html,
-body, 
+body,
 #__next {
-  max-width: 100vw;
-  max-height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   height: 100%;
   width: 100%;
   font-family: 'Mukta Vaani';
   font-weight: 600;
 }
 
-#__next > div {
+#__next>div {
   height: 100%;
-  }
+}
 
 .row {
   display: flex;
@@ -106,4 +109,3 @@ body,
 .button:hover {
   cursor: pointer
 }
-

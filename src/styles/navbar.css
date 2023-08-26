@@ -1,0 +1,52 @@
+.navbar-container {
+    width: fit-content;
+    background-color: var(--purple);
+    padding: 3em 2em;
+    padding-top: 4em;
+    position: absolute;
+    top: 0;
+    border-radius: 0 0 5em 7em;
+    align-items: center;
+
+    .row {
+        align-items: center;
+    }
+
+    >* {
+        text-decoration: none;
+    }
+
+    .nav-button {
+        background-color: var(--black);
+        border-radius: 2em;
+        padding: 0.3em 1em;
+        color: var(--white-1);
+        width: fit-content;
+        font-weight: 800;
+    }
+
+    .nav-button.us {
+        border-radius: 2em 1em 2em 1em;
+    }
+
+    .nav-button.roadmap {
+        border-radius: 2em 2em 1em 1em;
+    }
+
+    .nav-button.contact {
+        border-radius: 1em 2em 2em 3em;
+    }
+
+    .nav-button.store {
+        border-radius: 2em 1em 2em 1em;
+        color: var(--black);
+        background-color: var(--white-1);
+    }
+
+
+
+    .store-button {
+        background-color: var(--white-1);
+    }
+
+}

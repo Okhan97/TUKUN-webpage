@@ -1,0 +1,43 @@
+.home-container {
+    background-color: var(--black);
+    color: var(--white-1);
+}
+
+.mainframe {
+    padding: 50px;
+    flex-grow: 1;
+    justify-content: space-between;
+
+    .logo {
+        width: 150px;
+        height: 70px;
+        background-color: var(--green-1);
+    }
+
+    .title-container {
+        max-width: 600px;
+        margin-bottom: 2em;
+        margin-top: auto;
+
+        .title {
+            font-size: 2rem;
+            font-weight: 800;
+            line-height: 1em;
+        }
+
+        .subtitle {
+            font-weight: 500;
+            font-size: 1.2em;
+            line-height: 1.2em
+        }
+    }
+}
+
+.image-container {
+    margin-left: auto;
+    background-color: var(--white-1);
+    border-radius: 50% 70% 50% 70%;
+    padding: 0 5em;
+    position: absolute;
+    right: 3em;
+}

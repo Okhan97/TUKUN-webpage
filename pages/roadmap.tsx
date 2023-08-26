@@ -1,4 +1,4 @@
-import "../styles/roadmap.css";
+import "../src/styles/roadmap.css";
 
 const text =
   "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet";
