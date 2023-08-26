@@ -51,6 +51,7 @@ body,
   width: 100%;
   font-family: 'Mukta Vaani';
   font-weight: 600;
+  overflow: hidden;
 }
 
 #__next>div {
