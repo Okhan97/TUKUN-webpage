@@ -35,9 +35,9 @@
 
 .image-container {
     margin-left: auto;
-    background-color: var(--white-1);
-    border-radius: 50% 70% 50% 70%;
-    padding: 0 5em;
     position: absolute;
     right: 3em;
+    align-self: center;
+    display: flex;
+    align-items: center;
 }

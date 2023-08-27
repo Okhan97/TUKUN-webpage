@@ -1,5 +1,7 @@
 import RoadmapFolder from "../src/app/roadmapFolder";
 import "../src/styles/roadmap.css";
+import BackgroundImage from "../src/assets/roadmap-background.png";
+import Image from "next/image";
 
 const ROADMAP_TEXT = [
   {
@@ -31,21 +33,26 @@ const ROADMAP_TEXT = [
 
 function Roadmap() {
   return (
-    <div className="roadmap-container column">
-      <div className="title">
-        ¿ESTÁS BUSCANDO TENER TU PROPIO <br /> HUERTO URBANO SIN IMPORTAR TU
-        HABILIDAD?
+    <>
+      <div className="background-container">
+        <Image src={BackgroundImage} layout="fill" alt="tomatoes" />
       </div>
-      <div className="folders-row row gap-10">
-        {ROADMAP_TEXT.map(({ title, description }, idx) => (
-          <RoadmapFolder
-            number={idx + 1}
-            title={title}
-            description={description}
-          />
-        ))}
+      <div className="roadmap-container column">
+        <div className="title">
+          ¿ESTÁS BUSCANDO TENER TU PROPIO <br /> HUERTO URBANO SIN IMPORTAR TU
+          HABILIDAD?
+        </div>
+        <div className="folders-row row gap-10">
+          {ROADMAP_TEXT.map(({ title, description }, idx) => (
+            <RoadmapFolder
+              number={idx + 1}
+              title={title}
+              description={description}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -1,11 +1,13 @@
 import Link from "next/link";
 import "../styles/navbar.css";
 import Image from "next/image";
-import WhiteLogo from "../assets/logo-tukun-white.png";
+import WhiteLogo from "../assets/logo-white.png";
+import { useState } from "react";
 
 const logoSize = 150;
 
-export default function Navbar() {
+const Navbar = () => {
+  const [showNavbar, setShowNavbar] = useState(false);
   return (
     <div className="navbar-container column gap-1">
       <Image
@@ -28,4 +30,6 @@ export default function Navbar() {
       </Link>
     </div>
   );
-}
+};
+
+export default Navbar;

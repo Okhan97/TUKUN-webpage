@@ -5,6 +5,8 @@
     padding-top: 4em;
     position: absolute;
     top: 0;
+    left: 3em;
+    z-index: 10;
     border-radius: 0 0 5em 7em;
     align-items: center;
 
@@ -42,8 +44,6 @@
         color: var(--black);
         background-color: var(--white-1);
     }
-
-
 
     .store-button {
         background-color: var(--white-1);

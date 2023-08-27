@@ -1,8 +1,3 @@
-export const metadata = {
-  title: "Hello",
-  description: "Description",
-};
-
 export default function RootLayout({
   children,
 }: {

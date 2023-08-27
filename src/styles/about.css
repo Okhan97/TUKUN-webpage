@@ -73,7 +73,6 @@
             left: -4px;
         }
     }
-
 }
 
 
@@ -81,11 +80,6 @@
     overflow: hidden;
     margin-bottom: 3em;
     position: absolute;
-    width: 50%;
     right: 0em;
-    top: -10em;
     border-radius: 100em;
-    /* border-bottom-left-radius: 50em; */
-    transform: rotate(45deg) translate(0, -20%);
-
 }

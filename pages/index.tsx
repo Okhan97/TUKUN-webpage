@@ -1,13 +1,16 @@
 import Navbar from "../src/app/navbar";
 import "../src/styles/index.css";
-import IndexImage from "../src/app/indexImage";
+import Lettuce from "../src/assets/home-lettuce.png";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="home-container column">
+      <Navbar />
       <div className="mainframe column">
-        <Navbar />
-        <IndexImage />
+        <div className="image-container">
+          <Image src={Lettuce} width={900} alt="lettuce" />
+        </div>
         <div className="title-container column gap-1">
           <h1 className="title">
             IMAGINAMOS UN OASIS VERDE EN CADA CASA, NO IMPORTA EL TAMAÑO ...

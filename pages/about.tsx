@@ -1,5 +1,6 @@
 import "../src/styles/about.css";
-import AboutImage from "../src/app/aboutImage";
+import Image from "next/image";
+import BackgroundImage from "../src/assets/about-background.png";
 
 export default function About() {
   return (
@@ -30,7 +31,9 @@ export default function About() {
           <div className="manifest-small-yellow-line" />
         </div>
       </div>
-      <AboutImage />
+      <div className="about-image-container">
+        <Image src={BackgroundImage} width={800} alt="background" />
+      </div>
     </div>
   );
 }
