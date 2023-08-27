@@ -3,17 +3,17 @@ import Lettuce from "../../assets/home-lettuce.png";
 import Image from "next/image";
 import WhiteLogo from "../../assets/logo-tukun-white.png";
 
-const logoSize = 220;
+// const logoSize = 220;
 
 const Home = () => {
   return (
     <div className="home-container column">
       <div className="mainframe column">
         <div className="home-background-container">
-          <Image src={Lettuce} alt="lettuce" />
+          <Image src={Lettuce} alt="lettuce" layout="responsive" />
         </div>
         <div className="home-logo-container">
-          <Image src={WhiteLogo} width={logoSize} alt="lettuce" />
+          <Image src={WhiteLogo} alt="lettuce" layout="responsive" />
         </div>
         <div className="title-container column gap-1">
           <h1 className="title">
