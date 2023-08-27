@@ -1,5 +1,5 @@
 import "../../styles/manifest.css";
-import ManifestBackground from "../../assets/manifest-background.png";
+import ManifestBackground from "../../assets/backgrounds/manifest-background.png";
 import Image from "next/image";
 import ManifestIcon1 from "../..//assets/manifest-icon-1.png";
 import ManifestIcon2 from "../..//assets/manifest-icon-2.png";

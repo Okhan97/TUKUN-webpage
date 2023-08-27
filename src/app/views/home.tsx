@@ -1,7 +1,7 @@
 import "../../styles/home.css";
-import Lettuce from "../../assets/home-lettuce.png";
+import Lettuce from "../../assets/backgrounds/home-background.png";
 import Image from "next/image";
-import WhiteLogo from "../../assets/logo-tukun-white.png";
+import WhiteLogo from "../../assets/logos/tukun-white.png";
 
 // const logoSize = 220;
 

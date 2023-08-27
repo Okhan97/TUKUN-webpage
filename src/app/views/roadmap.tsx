@@ -1,6 +1,6 @@
 import RoadmapFolder from "../components/roadmapFolder";
 import "../../styles/roadmap.css";
-import BackgroundImage from "../../assets/roadmap-background.png";
+import BackgroundImage from "../../assets/backgrounds/roadmap-background.png";
 import Image from "next/image";
 
 const ROADMAP_TEXT = [

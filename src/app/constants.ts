@@ -6,5 +6,4 @@ const WHATSAPP_NUMBER = "+56982798487";
 
 export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}`;
 
-export const STORE_LINK =
-  "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley";
+export const STORE_LINK = "https://6eb073-2.myshopify.com";

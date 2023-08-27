@@ -2,12 +2,16 @@
     background-color: var(--white-1);
 
     .top-container {
-        width: 50%;
         flex-grow: 1;
-        margin-left: auto;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+
+        .background-flower-container {
+            flex: 1;
+            margin-top: auto;
+            font-size: 0;
+        }
     }
 
     .footer-container {

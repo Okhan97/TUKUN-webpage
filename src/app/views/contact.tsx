@@ -1,6 +1,6 @@
 import Image from "next/image";
 import "../../styles/contact.css";
-import YellowLogo from "../../assets/logo-tukun-yellow.png";
+import YellowLogo from "../../assets/logos/tukun-yellow.png";
 import { FaInstagram, FaWhatsapp, FaFacebook } from "react-icons/fa";
 import {
   FACEBOOK_LINK,
@@ -9,11 +9,16 @@ import {
   WHATSAPP_LINK,
 } from "../constants";
 import Link from "next/link";
+import Flower1 from "../../assets/backgrounds/contact-flower-1.png";
+import Flower2 from "../../assets/backgrounds/contact-flower-2.png";
 
 const Contact = () => {
   return (
     <div className="contact-container column">
-      <div className="top-container">
+      <div className="top-container row">
+        <div className="background-flower-container">
+          <Image src={Flower1} alt="flower1" layout="responsive" />
+        </div>
         <div className="column gap-3">
           <div className="text">
             ¿Ya te convenciste? <br />
@@ -25,6 +30,9 @@ const Contact = () => {
               MI KIT
             </div>
           </a>
+        </div>
+        <div className="background-flower-container">
+          <Image src={Flower2} alt="flower2" layout="responsive" />
         </div>
       </div>
       <div className="footer-container">

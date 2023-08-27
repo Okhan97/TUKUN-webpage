@@ -7,6 +7,7 @@
     .manifest-background-container {
         flex: 4;
         margin-top: auto;
+        font-size: 0;
     }
 
     .right-side-container {
@@ -53,23 +54,24 @@
     line-height: 1.2rem;
     text-align: center;
 
-    .principle-top-container {
+    .top-container {
         align-items: center;
         text-align: center;
+
+        .icon-container {
+            width: 6em;
+            margin: 0 auto;
+        }
+
+        .title {
+            font-size: 1.8rem;
+            line-height: 1em;
+            font-weight: 800;
+        }
     }
 
-    .principle-icon-container {
-        width: 6em;
-        margin: 0 auto;
-    }
 
-    .principle-title {
-        font-size: 1.8rem;
-        line-height: 1em;
-        font-weight: 800;
-    }
-
-    .principle-description {
+    .description {
         font-size: 1.1em;
     }
 }
