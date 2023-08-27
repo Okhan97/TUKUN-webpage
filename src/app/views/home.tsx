@@ -3,8 +3,6 @@ import Lettuce from "../../assets/backgrounds/home-background.png";
 import Image from "next/image";
 import WhiteLogo from "../../assets/logos/tukun-white.png";
 
-// const logoSize = 220;
-
 const Home = () => {
   return (
     <div className="home-container column">

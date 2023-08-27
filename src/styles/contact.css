@@ -45,7 +45,7 @@
 
     .store-button {
         text-align: center;
-        background-color: var(--green-1);
+        background-color: var(--purple);
         color: var(--white-1);
         width: fit-content;
         margin: 0 auto;
