@@ -1,6 +1,7 @@
 import "../../styles/about.css";
 import Image from "next/image";
 import BackgroundImage from "../../assets/about-background.png";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -25,11 +26,13 @@ const About = () => {
             neutral.
           </p>
         </div>
-        <div className="manifest-container button">
-          <span className="manifest-title">MANIFIESTO</span>
-          <div className="manifest-big-yellow-line" />
-          <div className="manifest-small-yellow-line" />
-        </div>
+        <Link href="/manifest">
+          <div className="manifest-container button">
+            <span className="manifest-title">MANIFIESTO</span>
+            <div className="manifest-big-yellow-line" />
+            <div className="manifest-small-yellow-line" />
+          </div>
+        </Link>
       </div>
       <div className="about-image-container">
         <Image src={BackgroundImage} width={800} alt="background" />
