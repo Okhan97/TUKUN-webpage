@@ -12,6 +12,8 @@
     align-items: center;
     padding: 3em;
     justify-content: space-between;
+    z-index: 1;
+    background-color: var(--white-1);
 
     .text-container {
         justify-content: space-between;
@@ -81,5 +83,4 @@
     margin-bottom: 3em;
     position: absolute;
     right: 0em;
-    border-radius: 100em;
 }

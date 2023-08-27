@@ -33,11 +33,17 @@
     }
 }
 
-.image-container {
+.home-background-container {
     margin-left: auto;
     position: absolute;
     right: 3em;
     align-self: center;
     display: flex;
     align-items: center;
+}
+
+.home-logo-container {
+    position: absolute;
+    top: 4em;
+    left: 4em;
 }

@@ -1,6 +1,12 @@
 import "../../styles/roadmap.css";
 
-const RoadmapFolder = ({ number, title, description }) => {
+type RoadmapFolderProps = {
+  number: number;
+  title: string;
+  description: string;
+};
+
+const RoadmapFolder = ({ number, title, description }: RoadmapFolderProps) => {
   return (
     <div className="roadmap-folder-container">
       <div className="folder-step">PASO {number}</div>

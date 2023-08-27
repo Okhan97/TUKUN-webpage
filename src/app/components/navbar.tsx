@@ -2,21 +2,21 @@ import Link from "next/link";
 import "../../styles/navbar.css";
 import Image from "next/image";
 import WhiteLogo from "../../assets/logo-white.png";
-import { useState } from "react";
 import { STORE_LINK } from "../constants";
 
 const logoSize = 150;
 
-const Navbar = () => {
-  const [showNavbar, setShowNavbar] = useState(false);
-  return (
+const Navbar = () => (
+  <div className="navbar-logic-container">
     <div className="navbar-container column gap-1">
-      <Image
-        src={WhiteLogo}
-        width={logoSize}
-        height={logoSize}
-        alt="white-logo"
-      />
+      <Link href="/" className="button">
+        <Image
+          src={WhiteLogo}
+          width={logoSize}
+          height={logoSize}
+          alt="white-logo"
+        />
+      </Link>
       <Link href="/about" className="nav-button us button">
         <span>NOSOTROS</span>
       </Link>
@@ -32,7 +32,7 @@ const Navbar = () => {
         </div>
       </a>
     </div>
-  );
-};
+  </div>
+);
 
 export default Navbar;

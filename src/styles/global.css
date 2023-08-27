@@ -54,7 +54,7 @@ body,
   overflow: hidden;
 }
 
-#__next>div {
+#__next>div:not(.navbar-logic-container) {
   height: 100%;
 }
 
