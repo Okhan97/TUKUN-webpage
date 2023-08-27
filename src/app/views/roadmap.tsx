@@ -2,7 +2,6 @@ import RoadmapFolder from "../components/roadmapFolder";
 import "../../styles/roadmap.css";
 import BackgroundImage from "../../assets/roadmap-background.png";
 import Image from "next/image";
-import Navbar from "../components/navbar";
 
 const ROADMAP_TEXT = [
   {
@@ -35,7 +34,6 @@ const ROADMAP_TEXT = [
 const Roadmap = () => {
   return (
     <>
-      <Navbar />
       <div className="roadmap-background-container">
         <Image src={BackgroundImage} layout="fill" alt="tomatoes" />
       </div>
