@@ -1,11 +1,18 @@
 .contact-container {
     background-color: var(--white-1);
 
+    .top-container {
+        width: 50%;
+        flex-grow: 1;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .footer-container {
         background-color: var(--black);
-        position: absolute;
-        bottom: 0;
-        width: 100%;
+        margin-top: auto;
         height: 7em;
 
         >div {
@@ -27,9 +34,29 @@
         }
     }
 
+    .text {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .store-button {
+        text-align: center;
+        background-color: var(--green-1);
+        color: var(--white-1);
+        width: fit-content;
+        margin: 0 auto;
+        font-size: 3em;
+        line-height: 1em;
+        padding: 0.3em 1em;
+        border-radius: 0.5em 1.5em;
+        font-weight: 800;
+    }
+
 }
 
-.background-container {
+.contact-background-container {
     position: absolute;
+    transform: rotate(-90deg);
     left: 0;
+    bottom: 7em;
 }

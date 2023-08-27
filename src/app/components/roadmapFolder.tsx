@@ -1,4 +1,4 @@
-import "../styles/roadmap.css";
+import "../../styles/roadmap.css";
 
 const RoadmapFolder = ({ number, title, description }) => {
   return (

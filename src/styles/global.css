@@ -110,3 +110,7 @@ body,
 .button:hover {
   cursor: pointer
 }
+
+a {
+  all: unset;
+}

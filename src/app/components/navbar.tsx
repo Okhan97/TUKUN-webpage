@@ -1,8 +1,9 @@
 import Link from "next/link";
-import "../styles/navbar.css";
+import "../../styles/navbar.css";
 import Image from "next/image";
-import WhiteLogo from "../assets/logo-white.png";
+import WhiteLogo from "../../assets/logo-white.png";
 import { useState } from "react";
+import { STORE_LINK } from "../constants";
 
 const logoSize = 150;
 
@@ -16,18 +17,20 @@ const Navbar = () => {
         height={logoSize}
         alt="white-logo"
       />
-      <Link href="/about" className="nav-button us">
+      <Link href="/about" className="nav-button us button">
         <span>NOSOTROS</span>
       </Link>
-      <Link href="/roadmap" className="nav-button roadmap">
+      <Link href="/roadmap" className="nav-button roadmap button">
         <span>PASO A PASO</span>
       </Link>
-      <Link href="/contact" className="nav-button contact">
+      <Link href="/contact" className="nav-button contact button">
         <span>CONTACTO</span>
       </Link>
-      <Link href="/contact" className="nav-button store">
-        <span>TIENDA</span>
-      </Link>
+      <a href={STORE_LINK} target="_blank">
+        <div className="nav-button store button">
+          <span>TIENDA</span>
+        </div>
+      </a>
     </div>
   );
 };
