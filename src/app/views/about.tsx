@@ -32,7 +32,7 @@ const About = () => {
         </div>
       </div>
       <div className="about-image-container">
-        <Image src={BackgroundImage} width={900} alt="background" />
+        <Image src={BackgroundImage} width={800} alt="background" />
       </div>
     </div>
   );

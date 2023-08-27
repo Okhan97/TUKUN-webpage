@@ -1,0 +1,6 @@
+.manifest-container {
+    background-color: var(--white-1);
+    color: var(--black);
+    font-weight: 400;
+    width: 100%;
+}

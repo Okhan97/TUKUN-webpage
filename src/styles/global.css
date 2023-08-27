@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@300;400;600;700;800&display=swap');
 
 :root {
+  /* COLORS */
   /* Primary */
   --black: #1c1d1d;
   --grey-1: #3e3e3e;
@@ -33,7 +34,10 @@
   --red-2: #ce5757;
 
   /* Purple */
-  --purple: #5e3d5d
+  --purple: #5e3d5d;
+
+  /* Breakpoints */
+  --phone-breakpoint: 600px
 }
 
 * {
@@ -52,6 +56,7 @@ body,
   font-family: 'Mukta Vaani';
   font-weight: 600;
   overflow: hidden;
+  position: relative;
 }
 
 #__next>div:not(.navbar-logic-container) {

@@ -8,6 +8,7 @@
     border-radius: 0 0 5em 7em;
     align-items: center;
     transition: translate 0.5s;
+    transition-timing-function: cubic-bezier(.12, .81, .86, .97);
     translate: 0 -100%;
 
 
@@ -66,5 +67,16 @@
 .navbar-logic-container:hover {
     .navbar-container {
         translate: 0;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .navbar-logic-container {
+        width: 100%;
+        padding: 0 auto;
+        justify-content: center;
+        display: flex;
+        height: min-content;
     }
 }

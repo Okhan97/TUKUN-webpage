@@ -10,7 +10,7 @@ const Home = () => {
     <div className="home-container column">
       <div className="mainframe column">
         <div className="home-background-container">
-          <Image src={Lettuce} width={900} alt="lettuce" />
+          <Image src={Lettuce} alt="lettuce" />
         </div>
         <div className="home-logo-container">
           <Image src={WhiteLogo} width={logoSize} alt="lettuce" />

@@ -15,9 +15,13 @@
     }
 
     .title-container {
-        max-width: 600px;
+        max-width: 30em;
         margin-bottom: 2em;
         margin-top: auto;
+        background-color: var(--black);
+        z-index: 1;
+        padding: 1em;
+        border-radius: 1em;
 
         .title {
             font-size: 2rem;
@@ -43,7 +47,23 @@
 }
 
 .home-logo-container {
-    position: absolute;
-    top: 4em;
-    left: 4em;
+    margin-right: auto;
+}
+
+
+@media (max-width: 600px) {
+    .home-logo-container {
+        margin: 0;
+    }
+
+    .mainframe {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .home-background-container {
+        display: none;
+    }
 }
