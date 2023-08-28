@@ -1,6 +1,6 @@
 import "../../styles/about.css";
 import Image from "next/image";
-import BackgroundImage from "../../assets/backgrounds/about-background.png";
+import BackgroundImage from "../../assets/backgrounds/about-background.jpg";
 import Link from "next/link";
 
 const About = () => {
