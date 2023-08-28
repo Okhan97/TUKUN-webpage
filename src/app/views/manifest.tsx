@@ -44,11 +44,11 @@ const Manifest = () => {
           layout="responsive"
         />
       </div>
-      <div className="right-side-container column gap-10">
+      <div className="info-column-container column gap-10">
         <div className="title-container row gap-3">
           <div className="green-dot" />
           <div className="title">
-            LOS BENEFICIOS DE SER <br /> UNA HORTICULTORA URBANA
+            LOS BENEFICIOS DE SER UNA HORTICULTORA URBANA
           </div>
         </div>
         <div className="manifest-grid">
