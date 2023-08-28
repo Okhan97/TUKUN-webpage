@@ -42,7 +42,7 @@ const Roadmap = () => {
           ¿ESTÁS BUSCANDO TENER TU PROPIO <br /> HUERTO URBANO SIN IMPORTAR TU
           HABILIDAD?
         </div>
-        <div className="folders-row row gap-10">
+        <div className="folders-row row">
           {ROADMAP_TEXT.map(({ title, description }, idx) => (
             <RoadmapFolder
               number={idx + 1}

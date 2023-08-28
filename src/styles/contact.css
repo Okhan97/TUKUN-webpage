@@ -64,3 +64,33 @@
     left: 0;
     bottom: 7em;
 }
+
+@media (max-width: 700px) {
+    .contact-background-container {
+        display: none;
+    }
+
+    .contact-container {
+        .store-button {
+            font-size: 2em;
+        }
+
+        .text {
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .footer-container {
+            >.row {
+                justify-content: space-evenly;
+            }
+
+            .footer-text {
+                display: none;
+            }
+        }
+
+
+    }
+
+}

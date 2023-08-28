@@ -6,7 +6,7 @@ import Link from "next/link";
 const About = () => {
   return (
     <div className="about-container row">
-      <div className="column left-side-container">
+      <div className="column info-column-container ">
         <div className="text-container column gap-3">
           <div className="row gap-3 title-container">
             <div className="title-dot" />
