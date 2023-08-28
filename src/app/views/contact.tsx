@@ -1,6 +1,6 @@
 import Image from "next/image";
 import "../../styles/contact.css";
-import YellowLogo from "../../assets/logos/tukun-yellow.png";
+import YellowLogo from "../../assets/logos/tukun-yellow-bg-black.jpg";
 import { FaInstagram, FaWhatsapp, FaFacebook } from "react-icons/fa";
 import {
   FACEBOOK_LINK,

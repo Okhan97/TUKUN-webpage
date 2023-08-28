@@ -1,10 +1,10 @@
 import "../../styles/manifest.css";
-import ManifestBackground from "../../assets/backgrounds/manifest-background.png";
+import ManifestBackground from "../../assets/backgrounds/manifest-background.jpg";
 import Image from "next/image";
-import ManifestIcon1 from "../..//assets/manifest-icon-1.png";
-import ManifestIcon2 from "../..//assets/manifest-icon-2.png";
-import ManifestIcon3 from "../..//assets/manifest-icon-3.png";
-import ManifestIcon4 from "../..//assets/manifest-icon-4.png";
+import ManifestIcon1 from "../../assets/icons/manifest-icon-1.jpg";
+import ManifestIcon2 from "../../assets/icons/manifest-icon-2.jpg";
+import ManifestIcon3 from "../../assets/icons/manifest-icon-3.jpg";
+import ManifestIcon4 from "../../assets/icons/manifest-icon-4.jpg";
 import Principle from "../components/principle";
 
 const MANIFEST_PRINCIPLES = [

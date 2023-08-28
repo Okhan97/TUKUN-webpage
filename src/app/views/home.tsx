@@ -1,7 +1,7 @@
 import "../../styles/home.css";
-import Lettuce from "../../assets/backgrounds/home-background.png";
+import Lettuce from "../../assets/backgrounds/home-background.jpg";
 import Image from "next/image";
-import WhiteLogo from "../../assets/logos/tukun-white.png";
+import WhiteLogo from "../../assets/logos/tukun-white-bg-black.jpg";
 
 const Home = () => {
   return (

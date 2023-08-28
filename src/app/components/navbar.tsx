@@ -1,7 +1,7 @@
 import Link from "next/link";
 import "../../styles/navbar.css";
 import Image from "next/image";
-import WhiteLogo from "../../assets/logos/logo-white.png";
+import WhiteLogo from "../../assets/logos/logo-white-bg-purple.jpg";
 import { STORE_LINK } from "../constants";
 
 const logoSize = 150;
