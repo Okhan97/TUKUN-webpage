@@ -9,8 +9,8 @@ import {
   WHATSAPP_LINK,
 } from "../constants";
 import Link from "next/link";
-import Flower1 from "../../assets/backgrounds/contact-flower-1.png";
-import Flower2 from "../../assets/backgrounds/contact-flower-2.png";
+import Flower1 from "../../assets/backgrounds/contact-flower-1.jpg";
+import Flower2 from "../../assets/backgrounds/contact-flower-2.jpg";
 
 const Contact = () => {
   return (
