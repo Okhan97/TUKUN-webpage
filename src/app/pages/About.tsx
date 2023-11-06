@@ -26,7 +26,7 @@ const About = ({}, ref) => {
             neutral.
           </p>
         </div>
-        <div className="manifest-container button">
+        <div className="manifest-container">
           <span className="manifest-title">MANIFIESTO</span>
           <div className="manifest-big-yellow-line" />
           <div className="manifest-small-yellow-line" />

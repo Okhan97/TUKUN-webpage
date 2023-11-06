@@ -8,9 +8,14 @@
         justify-content: space-between;
 
         .background-flower-container {
+            display: flex;
             flex: 1;
             margin-top: auto;
             font-size: 0;
+        }
+
+        .end {
+            justify-content: end;
         }
     }
 
@@ -58,18 +63,7 @@
 
 }
 
-.contact-background-container {
-    position: absolute;
-    transform: rotate(-90deg);
-    left: 0;
-    bottom: 7em;
-}
-
 @media (max-width: 700px) {
-    .contact-background-container {
-        display: none;
-    }
-
     .contact-container {
         .store-button {
             font-size: 2em;
@@ -90,7 +84,13 @@
             }
         }
 
+        .background-flower-container {
+            display: none !important;
+        }
 
+        .top-container {
+            margin: auto;
+        }
     }
 
 }

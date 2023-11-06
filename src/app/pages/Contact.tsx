@@ -31,7 +31,7 @@ const Contact = ({}, ref) => {
             </div>
           </a>
         </div>
-        <div className="background-flower-container">
+        <div className="background-flower-container end">
           <Image src={Flower2} alt="flower2" />
         </div>
       </div>
