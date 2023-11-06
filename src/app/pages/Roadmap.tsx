@@ -33,10 +33,10 @@ const ROADMAP_TEXT = [
 
 const Roadmap = () => {
   return (
-    <>
-      <div className="roadmap-background-container">
-        <Image src={BackgroundImage} layout="fill" alt="tomatoes" />
-      </div>
+    <div className="page-container">
+      {/* <div className="roadmap-background-container">
+        <Image src={BackgroundImage} fill alt="tomatoes" />
+      </div> */}
       <div className="roadmap-container column">
         <div className="title">
           ¿ESTÁS BUSCANDO TENER TU PROPIO <br /> HUERTO URBANO SIN IMPORTAR TU
@@ -52,7 +52,7 @@ const Roadmap = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

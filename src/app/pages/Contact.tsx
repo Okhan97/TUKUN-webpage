@@ -14,7 +14,7 @@ import Flower2 from "../../assets/backgrounds/contact-flower-2.jpg";
 
 const Contact = () => {
   return (
-    <div className="contact-container column">
+    <div className="contact-container page-container column">
       <div className="top-container row">
         <div className="background-flower-container">
           <Image src={Flower1} alt="flower1" layout="responsive" />

@@ -36,7 +36,7 @@ const MANIFEST_PRINCIPLES = [
 
 const Manifest = () => {
   return (
-    <div className="manifest-container row">
+    <div className="manifest-container page-container row">
       <div className="manifest-background-container">
         <Image
           src={ManifestBackground}
