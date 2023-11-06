@@ -7,7 +7,7 @@ import { ROADMAP_TEXT } from "../constants";
 
 const Roadmap = ({}, ref) => {
   return (
-    <div className="page-container" ref={ref}>
+    <div className="page-container roadmap-page-container" ref={ref}>
       <div className="roadmap-background-container">
         <Image src={BackgroundImage} fill alt="tomatoes" />
       </div>

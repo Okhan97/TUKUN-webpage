@@ -1,8 +1,11 @@
+.roadmap-page-container {
+    display: flex;
+}
+
 .roadmap-container {
     background-color: var(--black);
     padding-top: 3em;
-    z-index: 2;
-    height: 100%;
+    flex: 1;
 
     .title {
         background-color: var(--purple);
