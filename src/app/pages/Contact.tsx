@@ -8,13 +8,13 @@ import {
   STORE_LINK,
   WHATSAPP_LINK,
 } from "../constants";
-import Link from "next/link";
 import Flower1 from "../../assets/backgrounds/contact-flower-1.jpg";
 import Flower2 from "../../assets/backgrounds/contact-flower-2.jpg";
+import { forwardRef } from "react";
 
-const Contact = () => {
+const Contact = ({}, ref) => {
   return (
-    <div className="contact-container page-container column">
+    <div className="contact-container page-container column" ref={ref}>
       <div className="top-container row">
         <div className="background-flower-container">
           <Image src={Flower1} alt="flower1" />
@@ -37,9 +37,17 @@ const Contact = () => {
       </div>
       <div className="footer-container">
         <div className="row gap-3">
-          <Link href="/" className="button">
+          <div
+            className="button"
+            onClick={() =>
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              })
+            }
+          >
             <Image src={YellowLogo} width={100} alt="yellow-logo" />
-          </Link>
+          </div>
           <div className="footer-text">
             Escríbenos <br />
             contacto@tukun.cl
@@ -65,4 +73,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default forwardRef(Contact);

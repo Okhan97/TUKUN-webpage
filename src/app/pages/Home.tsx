@@ -2,10 +2,11 @@ import "../../styles/home.css";
 import Lettuce from "../../assets/backgrounds/home-background.jpg";
 import Image from "next/image";
 import WhiteLogo from "../../assets/logos/tukun-white-bg-black.jpg";
+import { forwardRef } from "react";
 
-const Home = () => {
+const Home = ({}, ref) => {
   return (
-    <div className="home-container page-container column">
+    <div className="home-container page-container column" ref={ref}>
       <div className="mainframe column">
         <div className="home-background-container">
           <Image src={Lettuce} alt="lettuce" fill />
@@ -29,4 +30,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default forwardRef(Home);

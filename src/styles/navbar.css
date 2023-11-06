@@ -57,9 +57,9 @@
 
 .navbar-logic-container {
     padding: 0 3em;
-    width: 20%;
-    height: min-content;
-    position: absolute;
+    width: 250px;
+    height: 250px;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 10;

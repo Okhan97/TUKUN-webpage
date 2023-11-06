@@ -1,31 +1,53 @@
-import Link from "next/link";
 import "../../styles/navbar.css";
 import Image from "next/image";
 import WhiteLogo from "../../assets/logos/logo-white-bg-purple.jpg";
 import { STORE_LINK } from "../constants";
+import { MutableRefObject, forwardRef } from "react";
 
 const logoSize = 150;
 
-const Navbar = () => (
+type RefsType = {
+  home: MutableRefObject<HTMLDivElement | null>;
+  about: MutableRefObject<HTMLDivElement | null>;
+  manifest: MutableRefObject<HTMLDivElement | null>;
+  roadmap: MutableRefObject<HTMLDivElement | null>;
+  contact: MutableRefObject<HTMLDivElement | null>;
+};
+
+type NavBarProps = {
+  handleClick: (ref: MutableRefObject<HTMLDivElement | null>) => void;
+  refs: RefsType;
+};
+
+const Navbar = ({ handleClick, refs }: NavBarProps) => (
   <div className="navbar-logic-container">
     <div className="navbar-container column gap-1">
-      <Link href="/" className="button">
+      <div className="button" onClick={() => handleClick(refs.home)}>
         <Image
           src={WhiteLogo}
           width={logoSize}
           height={logoSize}
           alt="white-logo"
         />
-      </Link>
-      <Link href="/about" className="nav-button us button">
+      </div>
+      <div
+        className="nav-button us button"
+        onClick={() => handleClick(refs.about)}
+      >
         <span>NOSOTROS</span>
-      </Link>
-      <Link href="/roadmap" className="nav-button roadmap button">
+      </div>
+      <div
+        className="nav-button roadmap button"
+        onClick={() => handleClick(refs.roadmap)}
+      >
         <span>PASO A PASO</span>
-      </Link>
-      <Link href="/contact" className="nav-button contact button">
+      </div>
+      <div
+        className="nav-button contact button"
+        onClick={() => handleClick(refs.contact)}
+      >
         <span>CONTACTO</span>
-      </Link>
+      </div>
       <a href={STORE_LINK} target="_blank">
         <div className="nav-button store button">
           <span>TIENDA</span>
@@ -35,4 +57,4 @@ const Navbar = () => (
   </div>
 );
 
-export default Navbar;
+export default forwardRef(Navbar);

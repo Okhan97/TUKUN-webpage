@@ -1,11 +1,11 @@
 import "../../styles/about.css";
 import Image from "next/image";
 import BackgroundImage from "../../assets/backgrounds/about-background.jpg";
-import Link from "next/link";
+import { forwardRef } from "react";
 
-const About = () => {
+const About = ({}, ref) => {
   return (
-    <div className="about-container page-container row">
+    <div className="about-container page-container row" ref={ref}>
       <div className="column info-column-container ">
         <div className="text-container column gap-3">
           <div className="row gap-3 title-container">
@@ -26,13 +26,11 @@ const About = () => {
             neutral.
           </p>
         </div>
-        <Link href="/manifest">
-          <div className="manifest-container button">
-            <span className="manifest-title">MANIFIESTO</span>
-            <div className="manifest-big-yellow-line" />
-            <div className="manifest-small-yellow-line" />
-          </div>
-        </Link>
+        <div className="manifest-container button">
+          <span className="manifest-title">MANIFIESTO</span>
+          <div className="manifest-big-yellow-line" />
+          <div className="manifest-small-yellow-line" />
+        </div>
       </div>
       <div className="about-image-container">
         <Image src={BackgroundImage} width={800} alt="background" />
@@ -41,4 +39,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default forwardRef(About);
