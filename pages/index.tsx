@@ -1,7 +1,5 @@
-import HomeView from "../src/app/views/home";
-
 function IndexPage() {
-  return <HomeView />;
+  return;
 }
 
 export default IndexPage;

@@ -39,13 +39,16 @@
 
 .home-background-container {
     position: absolute;
-    width: 800px;
+    width: 747px;
+    height: 627px;
     max-width: 70%;
 }
 
 .home-logo-container {
     margin-right: auto;
     width: 220px;
+    height: 220px;
+    position: absolute;
 }
 
 

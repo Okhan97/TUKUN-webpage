@@ -12,7 +12,7 @@ const Principle = ({ icon, title, description }: PrincipleProps) => {
     <div className="principle-container column">
       <div className="top-container column gap-3">
         <div className="icon-container">
-          <Image src={icon} alt={title} layout="responsive" />
+          <Image src={icon} alt={title} fill />
         </div>
         <div className="title">{title}</div>
       </div>

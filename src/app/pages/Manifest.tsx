@@ -38,13 +38,9 @@ const Manifest = () => {
   return (
     <div className="manifest-container page-container row">
       <div className="manifest-background-container">
-        <Image
-          src={ManifestBackground}
-          alt="eco-building"
-          layout="responsive"
-        />
+        <Image src={ManifestBackground} alt="eco-building" fill />
       </div>
-      <div className="info-column-container column gap-10">
+      <div className="info-column-container column">
         <div className="title-container row gap-3">
           <div className="green-dot" />
           <div className="title">

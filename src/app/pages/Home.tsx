@@ -8,10 +8,10 @@ const Home = () => {
     <div className="home-container page-container column">
       <div className="mainframe column">
         <div className="home-background-container">
-          <Image src={Lettuce} alt="lettuce" layout="responsive" />
+          <Image src={Lettuce} alt="lettuce" fill />
         </div>
         <div className="home-logo-container">
-          <Image src={WhiteLogo} alt="lettuce" layout="responsive" />
+          <Image src={WhiteLogo} alt="lettuce" fill />
         </div>
         <div className="title-container column gap-1">
           <h1 className="title">

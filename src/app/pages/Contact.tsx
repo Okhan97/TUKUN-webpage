@@ -17,7 +17,7 @@ const Contact = () => {
     <div className="contact-container page-container column">
       <div className="top-container row">
         <div className="background-flower-container">
-          <Image src={Flower1} alt="flower1" layout="responsive" />
+          <Image src={Flower1} alt="flower1" />
         </div>
         <div className="column gap-3">
           <div className="text">
@@ -32,7 +32,7 @@ const Contact = () => {
           </a>
         </div>
         <div className="background-flower-container">
-          <Image src={Flower2} alt="flower2" layout="responsive" />
+          <Image src={Flower2} alt="flower2" />
         </div>
       </div>
       <div className="footer-container">
