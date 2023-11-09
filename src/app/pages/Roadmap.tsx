@@ -1,4 +1,4 @@
-import RoadmapFolder from "../components/RoadmapFolder";
+import RoadmapFolder from "../components/roadmapFolder";
 import "../../styles/roadmap.css";
 import BackgroundImage from "../../assets/backgrounds/roadmap-background.jpg";
 import Image from "next/image";
