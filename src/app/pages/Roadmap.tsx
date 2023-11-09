@@ -1,9 +1,10 @@
 import RoadmapFolder from "../components/roadmapFolder";
 import "../../styles/roadmap.css";
-import BackgroundImage from "../../assets/backgrounds/roadmap-background.jpg";
 import Image from "next/image";
 import { forwardRef } from "react";
 import { ROADMAP_TEXT } from "../constants";
+
+const BackgroundImage = "/assets/backgrounds/roadmap-background.jpg";
 
 const Roadmap = ({}, ref) => {
   return (

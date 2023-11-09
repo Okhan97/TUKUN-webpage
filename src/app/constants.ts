@@ -1,8 +1,3 @@
-import ManifestIcon1 from "../assets/icons/manifest-icon-1.jpg";
-import ManifestIcon2 from "../assets/icons/manifest-icon-2.jpg";
-import ManifestIcon3 from "../assets/icons/manifest-icon-3.jpg";
-import ManifestIcon4 from "../assets/icons/manifest-icon-4.jpg";
-
 export const FACEBOOK_LINK = "https://www.facebook.com/tukunchile/";
 
 export const INSTAGRAM_LINK = "https://www.instagram.com/tukuncl/";
@@ -43,25 +38,25 @@ export const ROADMAP_TEXT = [
 
 export const MANIFEST_PRINCIPLES = [
   {
-    icon: ManifestIcon1,
+    icon: "/assets/icons/manifest-icon-1.jpg",
     title: "ES PARA TODOS",
     description:
       "Sólo tendrás que idear el mejor momento para cosechar tus plantas. En Tukun nos preocupamos de seleccionar los mejores productos para ti en un cómodo kit que te asegurará el éxito como agricultor urbano. Nosotros te guiaremos en todo el camino.",
   },
   {
-    icon: ManifestIcon2,
+    icon: "/assets/icons/manifest-icon-2.jpg",
     title: "BIOFILIA",
     description:
       "Vas a tener tu propio huerto urbano con una gran cantidad de plantas comestibles y otras plantas que trabajaran en sinergia para ti. Logrando que obtengas todos los beneficios terapéuticos y estéticos de ser un horticultor urbano.",
   },
   {
-    icon: ManifestIcon3,
+    icon: "/assets/icons/manifest-icon-3.jpg",
     title: "TOP OF THE LINE",
     description:
       "Además de ofrecerte deliciosos productos vegetales, los kits de cultivo fácil son seleccionados para que adornen tus espacios. Trabajamos con diseñadores y agricultores para que tengas el mejor vegetal posible, la mejor estructura para que crezcan y en diseños estéticos exclusivos.",
   },
   {
-    icon: ManifestIcon4,
+    icon: "/assets/icons/manifest-icon-4.jpg",
     title: "COMPROMISO CON UN CAMBIO AMBIENTAL POSITIVO",
     description:
       "No solo tendrás alegría por ser un horticultor urbano, también apoyarás a la regeneración de áreas verdes nativas. Además, nuestras semillas vienen de agricultores nacionales de familias de tradición campesina con los que compartimos el valor por los vegetales, así como respetamos su legado. Finalmente, todos los procesos relacionados con TUKUN buscarán ser carbono neutral.",

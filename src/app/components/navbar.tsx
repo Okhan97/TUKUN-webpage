@@ -1,6 +1,5 @@
 import "../../styles/navbar.css";
 import Image from "next/image";
-import WhiteLogo from "../../assets/logos/logo-white-bg-purple.jpg";
 import { STORE_LINK } from "../constants";
 import { MutableRefObject, forwardRef } from "react";
 
@@ -19,12 +18,14 @@ type NavBarProps = {
   refs: RefsType;
 };
 
+const WhiteLogoPath = "/assets/logos/logo-white-bg-purple.jpg";
+
 const Navbar = ({ handleClick, refs }: NavBarProps) => (
   <div className="navbar-logic-container">
     <div className="navbar-container column gap-1">
       <div className="button" onClick={() => handleClick(refs.home)}>
         <Image
-          src={WhiteLogo}
+          src={WhiteLogoPath}
           width={logoSize}
           height={logoSize}
           alt="white-logo"

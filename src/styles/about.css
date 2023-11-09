@@ -78,9 +78,10 @@
 
 .about-image-container {
     overflow: hidden;
-    margin-bottom: 3em;
     position: absolute;
     right: 0em;
+    width: 700px;
+    height: 700px;
 }
 
 @media (max-width: 700px) {

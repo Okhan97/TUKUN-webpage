@@ -1,8 +1,9 @@
 import "../../styles/home.css";
-import Lettuce from "../../assets/backgrounds/home-background.jpg";
 import Image from "next/image";
-import WhiteLogo from "../../assets/logos/tukun-white-bg-black.jpg";
 import { forwardRef } from "react";
+
+const WhiteLogo = "/assets/logos/tukun-white-bg-black.jpg";
+const Lettuce = "/assets/backgrounds/home-background.jpg";
 
 const Home = ({}, ref) => {
   return (

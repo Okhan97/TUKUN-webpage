@@ -1,6 +1,5 @@
 import Image from "next/image";
 import "../../styles/contact.css";
-import YellowLogo from "../../assets/logos/tukun-yellow-bg-black.jpg";
 import { FaInstagram, FaWhatsapp, FaFacebook } from "react-icons/fa";
 import {
   FACEBOOK_LINK,
@@ -8,16 +7,18 @@ import {
   STORE_LINK,
   WHATSAPP_LINK,
 } from "../constants";
-import Flower1 from "../../assets/backgrounds/contact-flower-1.jpg";
-import Flower2 from "../../assets/backgrounds/contact-flower-2.jpg";
 import { forwardRef } from "react";
+
+const YellowLogo = "/assets/logos/tukun-yellow-bg-black.jpg";
+const Flower1 = "/assets/backgrounds/contact-flower-1.jpg";
+const Flower2 = "/assets/backgrounds/contact-flower-2.jpg";
 
 const Contact = ({}, ref) => {
   return (
     <div className="contact-container page-container column" ref={ref}>
       <div className="contact-top-container row">
         <div className="contact-background-flower-container">
-          <Image src={Flower1} alt="flower1" />
+          <Image src={Flower1} width={400} height={400} alt="flower1" />
         </div>
         <div className="column gap-3">
           <div className="contact-text">
@@ -32,7 +33,7 @@ const Contact = ({}, ref) => {
           </a>
         </div>
         <div className="contact-background-flower-container end">
-          <Image src={Flower2} alt="flower2" />
+          <Image src={Flower2} width={400} height={400} alt="flower2" />
         </div>
       </div>
       <div className="contact-footer-container">
@@ -46,7 +47,12 @@ const Contact = ({}, ref) => {
               })
             }
           >
-            <Image src={YellowLogo} width={100} alt="yellow-logo" />
+            <Image
+              src={YellowLogo}
+              width={100}
+              height={100}
+              alt="yellow-logo"
+            />
           </div>
           <div className="contact-footer-text">
             Escríbenos <br />
