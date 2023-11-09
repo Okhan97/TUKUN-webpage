@@ -11,14 +11,14 @@ const Manifest = ({}, ref) => {
       <div className="manifest-background-container">
         <Image src={ManifestBackground} alt="eco-building" fill />
       </div>
-      <div className="info-column-container column">
-        <div className="title-container row gap-3">
-          <div className="green-dot" />
-          <div className="title">
+      <div className="manifest-info-column-container column">
+        <div className="manifest-title-container row gap-3">
+          <div className="manifest-green-dot" />
+          <div className="manifest-title">
             LOS BENEFICIOS DE SER UNA HORTICULTORA URBANA
           </div>
         </div>
-        <div className="manifest-grid">
+        <div className="principle-grid">
           {MANIFEST_PRINCIPLES.map(({ icon, title, description }) => (
             <Principle
               icon={icon}

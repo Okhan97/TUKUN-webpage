@@ -10,13 +10,13 @@ type PrincipleProps = {
 const Principle = ({ icon, title, description }: PrincipleProps) => {
   return (
     <div className="principle-container column">
-      <div className="top-container column gap-3">
-        <div className="icon-container">
+      <div className="principle-top-container column gap-3">
+        <div className="principle-icon-container">
           <Image src={icon} alt={title} fill />
         </div>
-        <div className="title">{title}</div>
+        <div className="principle-title">{title}</div>
       </div>
-      <div className="description">{description}</div>
+      <div className="principle-description">{description}</div>
     </div>
   );
 };

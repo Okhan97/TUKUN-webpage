@@ -30,7 +30,7 @@ const RootLayout = () => {
       <Navbar handleClick={handleClick} refs={refs} />
       <Home ref={homeRef} />
       <About ref={aboutRef} />
-      {/* <Manifest ref={manifestRef} /> */}
+      <Manifest ref={manifestRef} />
       {/* <Roadmap ref={roadmapRef} /> */}
       {/* <Contact ref={contactRef} /> */}
     </>

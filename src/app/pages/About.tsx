@@ -6,7 +6,7 @@ import { forwardRef } from "react";
 const About = ({}, ref) => {
   return (
     <div className="about-container page-container row" ref={ref}>
-      <div className="column info-column-container ">
+      <div className="column about-info-column-container ">
         <div className="text-container column gap-3">
           <div className="row gap-3 about-title-container">
             <div className="about-title-dot" />
@@ -26,10 +26,10 @@ const About = ({}, ref) => {
             neutral.
           </p>
         </div>
-        <div className="manifest-container">
-          <span className="manifest-title">MANIFIESTO</span>
-          <div className="manifest-big-yellow-line" />
-          <div className="manifest-small-yellow-line" />
+        <div className="about-manifest-container">
+          <span className="about-manifest-title">MANIFIESTO</span>
+          <div className="about-manifest-big-yellow-line" />
+          <div className="about-manifest-small-yellow-line" />
         </div>
       </div>
       <div className="about-image-container">

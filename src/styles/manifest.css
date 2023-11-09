@@ -3,37 +3,38 @@
     color: var(--black);
     font-weight: 400;
     width: 100%;
+}
 
-    .info-column-container {
-        flex: 5;
-        align-items: center;
-        padding: 3em 2em 3em 0;
-        justify-content: space-between;
+.manifest-info-column-container {
+    flex: 5;
+    align-items: center;
+    padding: 3rem 2rem 3rem 0;
+    justify-content: space-between;
 
-        .title-container {
-            align-items: center;
-            width: 80%;
+}
 
-            .green-dot {
-                background-color: var(--green-1);
-                min-height: 2em;
-                min-width: 2em;
-                border-radius: 100em;
-            }
+.manifest-title-container {
+    align-items: center;
+    width: 80%;
+}
 
-            .title {
-                font-size: 3em;
-                font-weight: 800;
-                line-height: 1em;
-            }
-        }
+.manifest-title {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 800;
+}
 
-        .manifest-grid {
-            width: 100%;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-    }
+.manifest-green-dot {
+    background-color: var(--green-1);
+    min-height: 2rem;
+    min-width: 2rem;
+    border-radius: 100em;
+}
+
+.principle-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .manifest-background-container {
@@ -44,60 +45,64 @@
 }
 
 .principle-container {
-    padding: 1em;
+    padding: 1rem;
     line-height: 1.2rem;
     text-align: center;
-    gap: 1em;
+    gap: 1rem;
+}
 
-    .top-container {
-        align-items: center;
-        text-align: center;
+.principle-top-container {
+    align-items: center;
+    text-align: center;
+}
 
-        .icon-container {
-            width: 90px;
-            height: 90px;
-            position: relative;
-            margin: 0 auto;
-        }
+.principle-icon-container {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    margin: 0 auto;
+}
 
-        .title {
-            font-size: 1.8rem;
-            line-height: 1em;
-            font-weight: 800;
-        }
-    }
+.principle-title {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    font-weight: 800;
+}
 
-
-    .description {
-        font-size: 1.1em;
-    }
+.principle-description {
+    font-size: 1.1em;
 }
 
 @media (max-width: 700px) {
-    .manifest-container {
-        .info-column-container {
-            padding: 2em 1em;
-            overflow-y: scroll;
 
-            .manifest-grid {
-                grid-template-columns: 1fr;
-            }
+    .manifest-info-column-container {
+        padding: 2em 1em;
+        overflow-y: scroll;
+    }
 
-            .title-container {
+    .principle-grid {
+        grid-template-columns: 1fr;
+    }
 
-                .green-dot {
-                    min-height: 1em;
-                    min-width: 1em;
-                }
+    .manifest-green-dot {
+        min-height: 1rem;
+        min-width: 1rem;
+    }
 
-                .title {
-                    font-size: 1.8em;
-                }
-            }
-        }
+    .principle-title {
+        font-size: 1.6rem;
+    }
+
+    .manifest-title-container {
+        width: 100%;
     }
 
     .manifest-background-container {
         display: none;
+    }
+
+    .manifest-title {
+        font-size: 2rem;
+        line-height: 2rem;
     }
 }
