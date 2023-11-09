@@ -33,7 +33,7 @@
 
 .about-title {
     font-size: 3.5rem;
-    line-height: 2em;
+    line-height: 2rem;
 }
 
 .about-paragraph {
@@ -90,7 +90,8 @@
 
     .about-info-column-container {
         width: 100%;
-        padding: 3em 1em;
+        padding: 3rem 1rem;
+        gap: 2rem
     }
 
 

@@ -32,7 +32,7 @@ const RootLayout = () => {
       <About ref={aboutRef} />
       <Manifest ref={manifestRef} />
       <Roadmap ref={roadmapRef} />
-      {/* <Contact ref={contactRef} /> */}
+      <Contact ref={contactRef} />
     </>
   );
 };
