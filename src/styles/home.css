@@ -3,7 +3,7 @@
     color: var(--white-1);
 }
 
-.mainframe {
+.home-mainframe {
     padding: 3em;
     flex-grow: 1;
     justify-content: space-between;
@@ -11,7 +11,7 @@
 }
 
 
-.title-container {
+.home-title-container {
     max-width: 40em;
     margin-bottom: 2em;
     margin-top: auto;
@@ -21,13 +21,13 @@
     border-radius: 1em;
 }
 
-.title {
+.home-title {
     font-size: 2rem;
     font-weight: 800;
     line-height: 2rem;
 }
 
-.subtitle {
+.home-subtitle {
     font-weight: 500;
     font-size: 1.2rem;
     line-height: 1.2rem
@@ -64,24 +64,24 @@
         height: 250px;
     }
 
-    .mainframe {
+    .home-mainframe {
         padding: 1em;
         align-items: center;
         justify-content: center;
     }
 
-    .title-container {
+    .home-title-container {
         margin-bottom: auto;
         margin-top: 0;
         text-align: center;
     }
 
-    .title {
+    .home-title {
         font-size: 1.2rem;
         line-height: 1.2rem;
     }
 
-    .subtitle {
+    .home-subtitle {
         font-size: 1rem;
         line-height: 1rem
     }

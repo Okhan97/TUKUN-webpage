@@ -7,15 +7,15 @@ import { forwardRef } from "react";
 const Home = ({}, ref) => {
   return (
     <div className="home-container page-container column" ref={ref}>
-      <div className="mainframe column">
+      <div className="home-mainframe column">
         <div className="home-logo-container">
           <Image src={WhiteLogo} alt="lettuce" fill />
         </div>
-        <div className="title-container column gap-1">
-          <h1 className="title">
+        <div className="home-title-container column gap-1">
+          <h1 className="home-title">
             IMAGINAMOS UN OASIS VERDE EN CADA CASA, NO IMPORTA EL TAMAÑO ...
           </h1>
-          <p className="subtitle">
+          <p className="home-subtitle">
             Donde puedas cultivar tu propio huerto urbano y se transforme en una
             huerta urbana única. Simplemente debes regarlas y darle amor,
             nosotros hacemos el resto. ¡Únete y selecciona el kit que más te

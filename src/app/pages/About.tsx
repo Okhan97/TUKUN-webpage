@@ -8,17 +8,17 @@ const About = ({}, ref) => {
     <div className="about-container page-container row" ref={ref}>
       <div className="column info-column-container ">
         <div className="text-container column gap-3">
-          <div className="row gap-3 title-container">
-            <div className="title-dot" />
-            <h1 className="title">NOSOTROS SOMOS</h1>
+          <div className="row gap-3 about-title-container">
+            <div className="about-title-dot" />
+            <h1 className="about-title">NOSOTROS SOMOS</h1>
           </div>
-          <p className="paragraph">
+          <p className="about-paragraph">
             La única organización que puede ofrecerte un estilo de vida
             sustentable mediante la horticultura urbana; donde elegimos junto a
             diseñadores y expertos de la agricultura todo lo que necesitas para
             comenzar.
           </p>
-          <p className="paragraph">
+          <p className="about-paragraph">
             Una comunidad de individuos apasionados por la conciencia ecológica
             y dedicados a redefinir las relaciones entre los humanos y la
             naturaleza. Por ello cada producto comprado apoyará regeneración de
