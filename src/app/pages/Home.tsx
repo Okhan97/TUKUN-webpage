@@ -24,7 +24,7 @@ const Home = ({}, ref) => {
           </p>
         </div>
         <div className="home-background-container">
-          <Image src={Lettuce} alt="lettuce" fill />
+          <img className="home-background-img" src={Lettuce} alt="lettuce" />
         </div>
       </div>
     </div>
