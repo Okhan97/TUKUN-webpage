@@ -8,35 +8,31 @@
     flex-grow: 1;
     justify-content: space-between;
     position: relative;
-
-    .logo {
-        width: 150px;
-        height: 70px;
-        background-color: var(--green-1);
-    }
-
-    .title-container {
-        max-width: 40em;
-        margin-bottom: 2em;
-        margin-top: auto;
-        background-color: var(--black);
-        z-index: 1;
-        padding: 1em;
-        border-radius: 1em;
-
-        .title {
-            font-size: 2rem;
-            font-weight: 800;
-            line-height: 2rem;
-        }
-
-        .subtitle {
-            font-weight: 500;
-            font-size: 1.2rem;
-            line-height: 1.2rem
-        }
-    }
 }
+
+
+.title-container {
+    max-width: 40em;
+    margin-bottom: 2em;
+    margin-top: auto;
+    background-color: var(--black);
+    z-index: 1;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2rem;
+}
+
+.subtitle {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.2rem
+}
+
 
 .home-background-container {
     position: absolute;
@@ -55,13 +51,14 @@
 
 @media (max-width: 700px) {
     .home-logo-container {
+        position: relative;
         margin: 0;
         width: 180px;
         height: 180px;
-        position: relative;
     }
 
     .home-background-container {
+        position: relative;
         bottom: 3em;
         width: 300px;
         height: 250px;
@@ -71,23 +68,22 @@
         padding: 1em;
         align-items: center;
         justify-content: center;
+    }
 
-        .title-container {
-            margin-bottom: auto;
-            margin-top: 0;
-            text-align: center;
+    .title-container {
+        margin-bottom: auto;
+        margin-top: 0;
+        text-align: center;
+    }
 
-            .title {
-                font-size: 1.2rem;
-                line-height: 1.2rem;
-            }
+    .title {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
 
-            .subtitle {
-                font-size: 1rem;
-                line-height: 1rem
-            }
-        }
-
+    .subtitle {
+        font-size: 1rem;
+        line-height: 1rem
     }
 }
 
@@ -95,5 +91,4 @@
     .home-background-container {
         right: 3em;
     }
-
 }

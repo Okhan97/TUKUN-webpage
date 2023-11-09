@@ -8,9 +8,6 @@ const Home = ({}, ref) => {
   return (
     <div className="home-container page-container column" ref={ref}>
       <div className="mainframe column">
-        <div className="home-background-container">
-          <Image src={Lettuce} alt="lettuce" fill />
-        </div>
         <div className="home-logo-container">
           <Image src={WhiteLogo} alt="lettuce" fill />
         </div>
@@ -24,6 +21,9 @@ const Home = ({}, ref) => {
             nosotros hacemos el resto. ¡Únete y selecciona el kit que más te
             llame!
           </p>
+        </div>
+        <div className="home-background-container">
+          <Image src={Lettuce} alt="lettuce" fill />
         </div>
       </div>
     </div>
