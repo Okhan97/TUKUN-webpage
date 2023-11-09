@@ -1,5 +1,5 @@
 import { MutableRefObject, useRef } from "react";
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
@@ -31,7 +31,7 @@ const RootLayout = () => {
       <Home ref={homeRef} />
       <About ref={aboutRef} />
       <Manifest ref={manifestRef} />
-      {/* <Roadmap ref={roadmapRef} /> */}
+      <Roadmap ref={roadmapRef} />
       {/* <Contact ref={contactRef} /> */}
     </>
   );

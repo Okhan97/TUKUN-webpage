@@ -9,9 +9,9 @@ type RoadmapFolderProps = {
 const RoadmapFolder = ({ number, title, description }: RoadmapFolderProps) => {
   return (
     <div className="roadmap-folder-container">
-      <div className="folder-step">PASO {number}</div>
-      <div className="folder-body">
-        <span>{title}</span>
+      <div className="roadmap-folder-step">PASO {number}</div>
+      <div className="roadmap-folder-body">
+        <span className="roadmap-folder-span">{title}</span>
         <p>{description}</p>
       </div>
     </div>

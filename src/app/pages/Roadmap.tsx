@@ -1,4 +1,4 @@
-import RoadmapFolder from "../components/roadmapFolder";
+import RoadmapFolder from "../components/RoadmapFolder";
 import "../../styles/roadmap.css";
 import BackgroundImage from "../../assets/backgrounds/roadmap-background.jpg";
 import Image from "next/image";
@@ -12,11 +12,11 @@ const Roadmap = ({}, ref) => {
         <Image src={BackgroundImage} fill alt="tomatoes" />
       </div>
       <div className="roadmap-container column">
-        <div className="title">
+        <div className="roadmap-title">
           ¿ESTÁS BUSCANDO TENER TU PROPIO <br /> HUERTO URBANO SIN IMPORTAR TU
           HABILIDAD?
         </div>
-        <div className="folders-row row">
+        <div className="roadmap-folders-row row">
           {ROADMAP_TEXT.map(({ title, description }, idx) => (
             <RoadmapFolder
               key={`roadmapfolder-${title}`}

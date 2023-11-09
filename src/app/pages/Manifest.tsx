@@ -1,7 +1,7 @@
 import "../../styles/manifest.css";
 import ManifestBackground from "../../assets/backgrounds/manifest-background.jpg";
 import Image from "next/image";
-import Principle from "../components/principle";
+import Principle from "../components/Principle";
 import { forwardRef } from "react";
 import { MANIFEST_PRINCIPLES } from "../constants";
 
