@@ -1,5 +1,4 @@
 import "../../styles/home.css";
-import Image from "next/image";
 import { forwardRef } from "react";
 
 const WhiteLogo = "/assets/logos/tukun-white-bg-black.jpg";
@@ -10,7 +9,7 @@ const Home = ({}, ref) => {
     <div className="home-container page-container column" ref={ref}>
       <div className="home-mainframe column">
         <div className="home-logo-container">
-          <Image src={WhiteLogo} alt="lettuce" fill />
+          <img src={WhiteLogo} alt="white-logo" className="fill-img" />
         </div>
         <div className="home-title-container column gap-1">
           <h1 className="home-title">
@@ -24,7 +23,7 @@ const Home = ({}, ref) => {
           </p>
         </div>
         <div className="home-background-container">
-          <img className="home-background-img" src={Lettuce} alt="lettuce" />
+          <img className="fill-img" src={Lettuce} alt="lettuce" />
         </div>
       </div>
     </div>

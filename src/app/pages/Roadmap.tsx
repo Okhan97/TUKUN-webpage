@@ -1,6 +1,5 @@
 import RoadmapFolder from "../components/roadmapFolder";
 import "../../styles/roadmap.css";
-import Image from "next/image";
 import { forwardRef } from "react";
 import { ROADMAP_TEXT } from "../constants";
 
@@ -10,7 +9,7 @@ const Roadmap = ({}, ref) => {
   return (
     <div className="page-container roadmap-page-container" ref={ref}>
       <div className="roadmap-background-container">
-        <Image src={BackgroundImage} fill alt="tomatoes" />
+        <img src={BackgroundImage} className="fill-img" alt="tomatoes" />
       </div>
       <div className="roadmap-container column">
         <div className="roadmap-title">

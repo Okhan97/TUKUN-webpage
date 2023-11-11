@@ -41,15 +41,11 @@
     max-width: 70%;
 }
 
-.home-background-img {
-    max-width: 100%;
-}
 
 .home-logo-container {
     margin-right: auto;
     width: 220px;
     height: 220px;
-    position: absolute;
 }
 
 

@@ -1,5 +1,4 @@
 import "../../styles/manifest.css";
-import Image from "next/image";
 
 type PrincipleProps = {
   icon: any;
@@ -12,7 +11,7 @@ const Principle = ({ icon, title, description }: PrincipleProps) => {
     <div className="principle-container column">
       <div className="principle-top-container column gap-3">
         <div className="principle-icon-container">
-          <Image src={icon} alt={title} fill />
+          <img src={icon} alt={title} className="fill-img" />
         </div>
         <div className="principle-title">{title}</div>
       </div>

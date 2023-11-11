@@ -1,5 +1,4 @@
 import "../../styles/navbar.css";
-import Image from "next/image";
 import { STORE_LINK } from "../constants";
 import { MutableRefObject, forwardRef } from "react";
 
@@ -24,7 +23,7 @@ const Navbar = ({ handleClick, refs }: NavBarProps) => (
   <div className="navbar-logic-container">
     <div className="navbar-container column gap-1">
       <div className="button" onClick={() => handleClick(refs.home)}>
-        <Image
+        <img
           src={WhiteLogoPath}
           width={logoSize}
           height={logoSize}

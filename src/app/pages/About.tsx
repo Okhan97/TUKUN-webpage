@@ -1,5 +1,4 @@
 import "../../styles/about.css";
-import Image from "next/image";
 import { forwardRef } from "react";
 
 const BackgroundImagePath = "/assets/backgrounds/about-background.jpg";
@@ -34,7 +33,7 @@ const About = ({}, ref) => {
         </div>
       </div>
       <div className="about-image-container">
-        <Image src={BackgroundImagePath} fill alt="background" />
+        <img src={BackgroundImagePath} alt="background" className="fill-img" />
       </div>
     </div>
   );

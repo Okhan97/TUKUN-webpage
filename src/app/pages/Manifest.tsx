@@ -1,5 +1,4 @@
 import "../../styles/manifest.css";
-import Image from "next/image";
 import Principle from "../components/principle";
 import { forwardRef } from "react";
 import { MANIFEST_PRINCIPLES } from "../constants";
@@ -10,7 +9,7 @@ const Manifest = ({}, ref) => {
   return (
     <div className="manifest-container page-container row" ref={ref}>
       <div className="manifest-background-container">
-        <Image src={ManifestBackground} alt="eco-building" fill />
+        <img src={ManifestBackground} alt="eco-building" className="fill-img" />
       </div>
       <div className="manifest-info-column-container column">
         <div className="manifest-title-container row gap-3">
