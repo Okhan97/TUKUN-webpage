@@ -6,7 +6,7 @@ const WHATSAPP_NUMBER = "+56982798487";
 
 export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}`;
 
-export const STORE_LINK = "https://6eb073-2.myshopify.com";
+export const STORE_LINK = "https://tukun.sumupstore.com";
 
 export const ROADMAP_TEXT = [
   {
